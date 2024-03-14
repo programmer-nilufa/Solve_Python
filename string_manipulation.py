@@ -1,0 +1,1 @@
+print(' String Manipulation Excercise \n String concatenation is done, with "+" sign \n e.g print ("Hello" + "Jennny") \n New line can be create with a backslesh and n')
