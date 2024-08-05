@@ -1,45 +1,27 @@
-print('Search the value is number 6')
-list = [4,5,9,1,6,2]      #[1,2,4,5,6,9]
-print('The sorted number is',sorted(list))
-list_mod = sorted(list)
+size = int(input('Enter list size: '))
+
+list = []
+for i in range(size):
+    item = int(input('Enter the item: '))
+    list.append(item)
+
+print('Before sorted = ',list)
+
+list_item = sorted(list)
+print('After sorted = ',list_item)
+
+key_item = int(input('Enter the search item: '))
 start = 0
-end = 5
-mid = (start+end)//2
-mid_item = list_mod[mid]
+end = len(list_item)-1
 
-print(f'Start number is {start} index, End number is {end} index, Mid number is {mid} index')
-print(f'The value of mid {mid_item}')
-
-for i in range(len(list)):
-    if mid_item == 6:
-        print('Your value here')
-    else:print('Your value is not founded')
-
-
-start = mid
-end = 5
-mid = (start+end)//2
-mid_item = list_mod[mid]
-
-print(f'Start number is {start} index, End number is {end} index, Mid number is {mid} index')
-print(f'The value of mid {mid_item}')
-
-for i in range(len(list)):
-    if mid_item == 6:
-        print('Your value here')
-    else:print('Your value is not founded')
-
-start = mid
-end = 5
-mid = (start + end) // 2
-mid_item = list_mod[mid]
-
-print(f'Start number is {start} index, End number is {end} index, Mid number is {mid} index')
-print(f'The value of mid {mid_item}')
-
-for i in range(len(list)):
-    if mid_item == 6:
-        print('Your value here')
-    else:
-        print('Your value is not founded')
+while(start<=end):
+    mid = (start+end)//2
+    if list_item[mid] == key_item:
+        print(f'Your search item is {mid} index')
+        break
+    elif list_item[mid] < key_item:
+        start = mid+1
+    elif list_item[mid] > key_item:
+        end = mid-1
+    else: print('Your data not found')
 
