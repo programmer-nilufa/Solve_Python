@@ -1,17 +1,44 @@
-number = input("Enter the number:")
-numbers = number.split()
+# num = int(input('Enter the number here:'))
+# n = []
+# for i in range(num):
+#     d = int(input())
+#     n.append(d)
+# print(n)
 
-count = 0
-for i in numbers:
-    count+=1
-print(count)
+# nam = input('number: ')
+# nams = nam.split()
+# cout = 0
+# for i in nams:
+#     cout+=1
+# print(cout)
+#
+# for j in range(cout):
+#     nams[j] = int(nams[j])
+# print(nams)
 
-for i in range(count):
-    numbers[i]=int(numbers[i])
-print(numbers)
 
-minimum = numbers[0]
-for j in numbers:
-    if j<minimum:
-        minimum=j
-print(minimum)
+
+n = int(input('Enter the total item: '))
+nu = []
+
+for i in range(n):
+    data = int(input('Numbers:'))
+    nu.append(data)
+
+
+print(nu)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
