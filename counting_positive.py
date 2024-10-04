@@ -6,7 +6,7 @@
 #
 # print('Positive number is:',count)
 
-
+"""
 n = int(input('Enter the number: '))
 number = []
 for i in range(n):
@@ -20,10 +20,17 @@ for j in number:
         positive_count_num += 1
 print('The positive number is: ',positive_count_num)
 
+"""
 
 
+n =  [1, 6, 3, -2, -9, 8]
+count = 0
 
+for i in n:
+    if i > 0:
+        count+=1
 
+print(count)
 
 
 
